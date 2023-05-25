@@ -1,0 +1,565 @@
+/* As configurações do asterisco funcioanm como um
+ reset para tirar as margens que vem 
+por padrão nos navegadores*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: 1080pt;
+  background-color: #ffffff;
+}
+
+/* -------------------------------------- HEADER -------------------------------------- */
+.menu_logo {
+  display: flex;
+  width: 100%;
+  height: 65px;
+  /* margin: auto; */
+  justify-content: center;
+  gap: 4rem;
+  background-color: #000033;
+  align-items: center;
+}
+
+.search-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  font-size: 18px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 45px;
+  caret-color: #4444dd;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: #ffffff;
+  box-shadow: 0 0 10px #ffffff;
+  background-color: #000033;
+  color: white;
+}
+
+.campo__pesquisa {
+  /* margin: auto; */
+  /* top: 0px; */
+  /* right: 300pt; */
+  width: 465px;
+  height: 47.96px;
+  position: relative;
+  object-fit: cover;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 45px;
+  background-color: rgba(196, 196, 196, 1);
+  padding-left: 20px;
+  display: block;
+}
+
+::placeholder {
+  font-size: 20px;
+}
+
+.elipsebuscar {
+  display: block; /* DISPLAY BLOCK PARA EU PODER ATRIBUIR TAMANHO */
+  border-radius: 50%; /* BORDER RADIUS 50% PARA DEIXAR REDONDO */
+  height: 30px;
+  width: 30px;
+  background: #000033;
+  cursor: pointer;
+  position: absolute;
+  fill: white;
+  right: 10px;
+  padding: 5px; /* PARA DEFINIR O TAMANHO DA LUPA */
+}
+
+.elipsebuscar svg {
+  display: block; /* PARA PODER CENTRALIZAR COM MARGIN */
+  padding-top: 0px; /* PARA CENTRALIZAR NA VERTICAL */
+  fill: white; /* PARA MUDAR A COR DO SVG */
+  margin: auto; /* CENTRALIZAR NA HORIZONTAL */
+}
+
+.login {
+  display: flex;
+}
+
+
+.logo {
+  width: 130px;
+  height: 29px;
+  /* margin: auto; */
+  display: flex;
+  /* right: 80px; */
+  position: relative;
+  right: 85px;
+}
+
+input::selection {
+  background: white;
+  color: #000033;
+}
+
+.icones_menu {
+  justify-content: space-between;
+}
+/* -------------------------------------- END OF HEADER -------------------------------------- */
+
+/* -------------------------------------- CATEGORIAS -------------------------------------- */
+.elipses {
+  padding: 40px;
+  display: flex; /* Isso deixa os elementos um ao lado do outro */
+  justify-content: space-between; /* essa opção deixa todos com espaço igual entre eles */
+  max-width: 1030px; /* esta opção é para que o container não tome a tela toda, apenas 500px */
+  margin: 0 auto; /* essa opção centraliza o container na tela, se tirar ele vai automaticamente grudar na esquerda */
+}
+
+.elipse svg {
+  display: block; /* PARA PODER CENTRALIZAR COM MARGIN */
+  padding-top: 0px; /* PARA CENTRALIZAR NA VERTICAL */
+  fill: white; /* PARA MUDAR A COR DO SVG */
+  width: 45%; /* DEFINIR TAMANHO DO ICONE */
+  height: 100%;
+  margin: auto; /* CENTRALIZAR NA HORIZONTAL */
+}
+
+/* NA CLASSE ABAIXO APENAS CRIEI CÍRCULOS COM UM TAMANHO DEFINIDO */
+.elipse {
+  display: block; /* DISPLAY BLOCK PARA EU PODER ATRIBUIR TAMANHO */
+  border-radius: 50%; /* BORDER RADIUS 50% PARA DEIXAR REDONDO */
+  height: 111px;
+  width: 111px;
+  background: #000033;
+  filter: drop-shadow(0px 10px 4px #00002b);
+}
+
+.elipse-individual {
+  text-align: center;
+  cursor: pointer;
+}
+
+.elipse-individual a {
+  text-decoration: none;
+  color: black;
+}
+
+.elipse-individual h2 {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.elipse,
+.elipse-individual h2 {
+  transition: 0.4s;
+}
+
+.elipse-individual:hover .elipse {
+  background: #ff0000;
+}
+
+.elipse-individual:hover h2 {
+  color: #ff0000; /* hover do texto abaixo dos botões */
+}
+/* -------------------------------------- END OF CATEGORIAS -------------------------------------- */
+
+
+
+/* ---------------------------------------------- BANNERS ---------------------------------------- */
+
+.swiper {
+  width: 1116px;
+  height: 341px;
+  border-radius: 15px;
+  display: none;
+}
+
+.swiper-slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.swiper-slide img {
+  width: 1116px;
+  height: 341px;
+}
+@font-face {
+  font-family: Lexend;
+  src: url('fonts/LexendDeca-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style:normal;
+}
+.forever {
+  display: flex;
+  position: absolute;
+  top:220px;
+  left: 708px;
+  width: 304px;
+  height: 60px;
+  background-color: #E96F00;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.forever h4 {
+  font-family: Lexend;
+  font-weight: normal;
+  color: #000033;
+  text-align: center;
+  font-size: 38px;
+}
+.forever:hover {
+  background: #000033;
+  border-style: solid;
+  border-color:#000033;
+}
+
+.forever:hover h4 {
+  color: #E96F00;
+}
+
+.swiper-wrapper {
+  margin-bottom: 2rem;
+}
+
+.swiper {
+  display:block;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: ORANGE;
+  
+}
+.swiper-pagination {
+
+}
+
+
+
+/* FIM DO BANNER */
+
+/*--------------------------------------Frete, Clube etc abaixo do Banner--------------------------------------------*/
+.entrega {
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 50px;
+ 
+ }
+ 
+ .item{
+  display: flex;
+ justify-content: center;
+ gap: 15px;
+ margin: auto;
+ 
+ }
+
+ .item-content{
+  line-height: 2px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 16px;
+ }
+/*FIM do FRETE ETC*/
+/* -------------------------------------- PRODUTOS -------------------------------------- */
+.ofertas-do-dia {
+  background: white;
+  padding: 1rem 0;
+}
+
+.ofertas-do-dia h2 {
+  margin-bottom: 4rem;
+}
+
+.produtos__ofertas-do-dia {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.produto {
+  background: white;
+  border-radius: 18px;
+  padding: 10px;
+  width: 145px;
+  height: 285px;
+  text-align: center;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.produto img {
+  max-width: 100%;
+}
+.produto p {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  bottom: 10px;
+}
+
+.produto button {
+  background: #000033;
+  color: white;
+  border-radius: 45px;
+  padding: 10px 20px;
+  width: 143.9px;
+  height: 31px;
+  position:relative;
+  right: 8px;
+  bottom: 20px;
+  cursor: pointer;
+  text-align: center;
+  border-color: transparent;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.produto button:hover {
+  background-color: red;
+  transition: 0.4s;
+}
+
+/* -------------------------------------- END OF PRODUTOS -------------------------------------- */
+
+/* svg:hover path {
+    fill: #000033;
+  }*/
+
+.promocoes {
+  display: block; /* PARA PODER CENTRALIZAR COM MARGIN */
+  top: 9px; /* PARA CENTRALIZAR NA VERTICAL */
+  fill: white; /* PARA MUDAR A COR DO SVG */
+  width: 40%; /* DEFINIR TAMANHO DO ICONE */
+  height: 100%;
+  margin: auto; /* CENTRALIZAR NA HORIZONTAL */
+  line-height: 19px;
+  margin: auto;
+  color: #3a3e59;
+  max-width: 108px;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.banner {
+  width: 1116px;
+  height: 341px;
+  margin: auto;
+  background-color: red;
+}
+
+.imgofert {
+  height: 150px;
+
+}
+
+.entregaret {
+  margin: auto;
+  width: 1116px;
+  height: 39px;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 15px;
+}
+
+/*.entrega {
+  position: relative;
+  left: 100px;
+}*/
+
+.entrega {
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
+ 
+ }
+ 
+ .item{
+  display: flex;
+ justify-content: center;
+ gap: 15px;
+ margin: auto;
+ 
+ }
+
+ .item-content{
+  line-height: 2px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 16px;
+ }
+
+
+.textoentreg {
+  font-size: 20px;
+  
+
+}
+
+h3, button{
+
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.retangazul {
+  width: 1116pt;
+  height: 39pt;
+  position: relative;
+  object-fit: cover;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 45px;
+  background-color: #000033;
+  margin: auto;
+  top: 16px;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 50pt;
+  /* margin: auto; */
+  justify-content: center;
+  gap: 4rem;
+  background-color: #000033;
+  align-items: center;
+}
+
+.logofooter {
+  width: 130pt;
+  height: 29pt;
+  /* margin: auto; */
+  display: flex;
+  /* right: 80px; */
+  position: relative;
+  margin: auto;
+}
+
+.direitosautorais {
+  width: 100%;
+  height: 357pt;
+  background-color: rgba(123, 118, 120, 27%);
+}
+
+.retrodap {
+  display: block; /* DISPLAY BLOCK PARA EU PODER ATRIBUIR TAMANHO */
+  border-radius: 45pt; /* BORDER RADIUS 50% PARA DEIXAR REDONDO */
+  width: 244pt;
+  height: 89pt;
+  background: #000033;
+}
+
+
+.aprov {
+  margin: auto;
+  color: #000000;
+  font-size: 25px;
+  
+}
+
+.ofdia {
+  margin: auto;
+  color: red;
+  font-size: 25px;
+}
+
+.divof {
+  display:flex;
+  position: absolute;
+  left: 120px;
+
+
+}
+
+.divaprov {
+  display:flex;
+  position: absolute;
+  left: 280px;
+  
+}
+
+.ofaprov {
+  width: 100%;
+  height: 20px;
+ 
+}
+
+.elipsepequena {
+  display: block; /* DISPLAY BLOCK PARA EU PODER ATRIBUIR TAMANHO */
+  border-radius: 50%; /* BORDER RADIUS 50% PARA DEIXAR REDONDO */
+  height: 46px;
+  width: 46px;
+  background: #000033;
+  filter: drop-shadow(0px 10px 4px #00002b);
+  position: relative;
+  margin: auto;
+  right: 480px;
+ justify-content: center;
+ gap: 15px;
+ margin: auto;
+  
+}
+
+
+.blocoep {
+
+  margin-top: 50px;
+  height: 30px;
+  width: 100%;
+
+  
+}
+.elipsepequena svg {
+  display: block; /* PARA PODER CENTRALIZAR COM MARGIN */
+  padding-top: 0px; /* PARA CENTRALIZAR NA VERTICAL */
+  fill: white; /* PARA MUDAR A COR DO SVG */
+  width: 45%; /* DEFINIR TAMANHO DO ICONE */
+  height: 100%;
+  margin: auto; /* CENTRALIZAR NA HORIZONTAL */
+}
+
+
+.aoladosec svg {
+ line-height: 2px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 16px;
+  
+}
+
+
+ 
+
+
+
+
